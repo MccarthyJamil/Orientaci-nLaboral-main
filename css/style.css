@@ -646,14 +646,15 @@ nav a.active {
 
 
 /* ==================================== */
-/* 12. Estilos del Carrusel de Personas Atendidas (ACTUALIZADO: Cuadrado, Imagen Full, Sin Franja y Sin Espacio Abajo) */
+/* 12. Estilos del Carrusel de Personas Atendidas (ACTUALIZADO: Contenedor Reducido y Imagen Contain) */
 /* ==================================== */
 
 .users-carousel {
     max-width: 420px; 
     margin: 30px auto; 
-    aspect-ratio: 1 / 1; 
-    height: auto; 
+    /* 🔴 CAMBIO CLAVE DESKTOP: Altura fija más pequeña para eliminar espacio en blanco */
+    height: 236px; 
+    aspect-ratio: auto; /* Anulamos el aspect-ratio para priorizar la altura */
     
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -672,7 +673,8 @@ nav a.active {
 .users-carousel .slide img {
     width: 100%;
     height: 100%; 
-    object-fit: cover; /* Para que la imagen cubra completamente el espacio */
+    /* Usamos 'contain' para que la imagen se ajuste y se vea completa */
+    object-fit: contain; 
     background-color: #ffffff; 
     display: block;
     max-height: none; 
@@ -771,7 +773,9 @@ nav a.active {
     .users-carousel {
         max-width: 95%; 
         margin: 20px auto;
-        aspect-ratio: 1 / 1; 
+        /* 🔴 CAMBIO CLAVE MÓVIL: Altura fija más pequeña para eliminar espacio en blanco en móvil */
+        height: 150px; 
+        aspect-ratio: auto; 
     }
     
     .users-carousel .slide {
@@ -780,7 +784,8 @@ nav a.active {
 
     .users-carousel .slide img {
         height: 100%;
-        object-fit: cover; 
+        /* Aseguramos que se vea la imagen completa */
+        object-fit: contain; 
         max-height: none;
     }
     
