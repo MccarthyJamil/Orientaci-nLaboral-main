@@ -109,6 +109,27 @@ header {
     display: block;
 }
 
+/* Estilos para la imagen de previsualización de la Guía */
+
+/* Contenedor que centrará la imagen */
+.guide-image-container {
+    margin-top: 20px; /* Espacio entre el botón y la imagen */
+    text-align: center; /* Centra la imagen si es más estrecha que el contenedor */
+    width: 100%;
+    background-color: transparent;
+}
+
+/* Estilo para la imagen real */
+.guide-preview-image {
+    max-width: 600px; /* 🟢 TAMAÑO CLAVE: Define el ancho máximo deseado. Ajusta este valor. */
+    height: auto;
+    display: block; /* Asegura que la imagen sea un bloque para centrarla mejor */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    border: none; /* Opcional: Un borde sutil para destacar la guía */
+    box-shadow: none;
+    background-color: transparent; /* Opcional: Una sombra para darle profundidad */
+}
+
 .header-container {
     display: flex;
     align-items: center; 
