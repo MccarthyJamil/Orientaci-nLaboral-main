@@ -48,15 +48,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // 2. Definir los datos para cada nivel del termómetro
     const termometerData = {
         'hotspot-baja': {
-            text: 'Nivel de Empleabilidad de Inicio: Requieres formación y experiencia para mejorar tu posición en el mercado laboral.',
             image: '../images/baja.png'
         },
         'hotspot-media': {
-            text: 'Nivel de Empleabilidad Moderado: Tienes un buen punto de partida, pero necesitas desarrollar habilidades específicas.',
-            image: '../images/media.png'
+            image: '../images/intermedia.png'
         },
         'hotspot-alta': {
-            text: 'Nivel de Empleabilidad Muy Alto: Tienes las competencias clave y experiencia en sectores de alta demanda.',
             image: '../images/alta.png'
         }
     };
@@ -69,7 +66,6 @@ document.addEventListener('DOMContentLoaded', () => {
         // Construye el HTML con la imagen y el texto
         infoBox.innerHTML = `
             <img src="${itemData.image}" alt="Indicador de Nivel" class="info-content-image">
-            <p>${itemData.text}</p>
         `;
         // Muestra la caja añadiendo la clase 'active' definida en CSS
         infoBox.classList.add('active');
