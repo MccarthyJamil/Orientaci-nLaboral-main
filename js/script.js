@@ -48,13 +48,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // 2. Definir los datos para cada nivel del termómetro
     const termometerData = {
         'hotspot-baja': {
-            image: '/images/baja.png'
+            image: 'images/baja.png'
         },
         'hotspot-media': {
-            image: '/images/intermedia.png'
+            image: 'images/intermedia.png'
         },
         'hotspot-alta': {
-            image: '/images/alta.png'
+            image: 'images/alta.png' //se hacen los cambios y quiero probarlos
         }
     };
 
